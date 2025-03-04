@@ -9,3 +9,52 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.jumbotron {
+    display: flex;
+    width: 80%;
+    height: 30%;
+    margin: 0 auto;
+}
+
+.CardsName {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.card1 {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.text {
+    color: white;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.ulNav {
+    margin-right: 10%;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    height: 66px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.pText {
+    margin-top: 25px;
+}
