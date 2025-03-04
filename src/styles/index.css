@@ -16,34 +16,21 @@
     margin: 0 auto;
 }
 
-.CardsName {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
 
-}
 
-.card1 {
-    display: flex;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.text {
-    color: white;
+.navbar-brand {
+    
     margin-left: 10%;
-    margin-top: 10px;
+    
 }
 
 .ulNav {
+    display: flex;
+    justify-content: end;
     margin-right: 10%;
 }
 
-.navbar {
-    background-color: black;
-}
+
 
 .footer {
     display: flex;
