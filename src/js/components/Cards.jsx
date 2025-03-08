@@ -1,49 +1,20 @@
-const Cards = () => {
+import { details } from "./array/dataAtribute";
+const Cards = ({ name, image }) => {
+
+
   return (
-    <div className="container text-center" style={{ width: "80%" }}>
-      <div class="row align-items-start">
-        <div className="col">
-          <div ClassName="card" >
-            <img src="src/img/rigo-baby.jpg" class="card-img-top" alt="src/img/rigo-baby.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Find out More</a>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div ClassName="card" >
-            <img src="src/img/rigo-baby.jpg" class="card-img-top" alt="src/img/rigo-baby.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Find out More</a>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div ClassName="card" >
-            <img src="src/img/rigo-baby.jpg" class="card-img-top" alt="src/img/rigo-baby.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Find out More</a>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div ClassName="card" >
-            <img src="src/img/rigo-baby.jpg" class="card-img-top" alt="src/img/rigo-baby.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Find out More</a>
-            </div>
-          </div>
+    
+   
+      <div className="card" style={{ width: "18rem" }}>
+        <img src={image} className="card-img-top" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title"> {name} </h5>
+          <p className="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo animi dignissimos ipsam veniam consectetur ab quos quaerat assumenda neque. Temporibus architecto tempore veniam porro est! Eligendi ipsa dignissimos quasi sequi! </p>
+          <a href="#" className="btn btn-primary">Find Out More</a>
         </div>
       </div>
-    </div>
+   
+
   );
 }
 export default Cards;

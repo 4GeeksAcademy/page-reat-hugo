@@ -6,16 +6,33 @@ import Cards from "./Cards";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
 import Footer from "./Footer";
+import { details } from "./array/dataAtribute";
+
 //create your first component
 const Home = () => {
-	return (<div class="container-fluid">
+	
+	
+       return(
+		<>
 		<Navbar />
 		<Jumbotron />
-		<Cards />
-		<Footer />
-	</div>
+<div className="cards">
+		{
+			details.map(values => {
+				console.log(values)
+				console.log(values.id)
+				return (
+				<Cards key={values.id} name={values.name} image={values.image}/>
+			
+			)
+			})
 
-	);
+		}
+</div>
+		<Footer />
+	</>
+	)
+
 };
 
 export default Home;
